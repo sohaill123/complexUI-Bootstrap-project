@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--nav end-->
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand">
+                <h2>Complex UI</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#fless">Section 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#cards2">Section 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#foo">Section 3</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--carousal start-->
+
+
+
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators aria-hidden">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    class="d-block w-100" alt="You are offline. Check your Internet Connection" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">First slide label</h5>
+                    <p class="text-light">First Slide Description</p>
+                    <button type="button" class="btn btn-primary">Call to action</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://images.unsplash.com/photo-1470723710355-95304d8aece4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    class="d-block w-100" alt="You are offline. Check your Internet Connection" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Second slide label</h5>
+                    <p class="text-light">Second Slide Description</p>
+                    <button type="button" class="btn btn-primary">Call to action</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=944&q=80"
+                    class="d-block w-100" alt="You are offline. Check your Internet Connection" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-light">Third slide label</h5>
+                    <p class="text-light">Third Slide Description</p>
+                    <button type="button" class="btn btn-primary">Call to action</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--carousal end-->
+
+    <!--css flex strt-->
+    <br>
+
+    <div id="fless" class="flex">
+        <div><img src="./card/flex11.png">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sit.</p>
+
+        </div>
+        <div><img src="./card/flex22.png">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sit.</p>
+        </div>
+        <div><img src="./card/flex33.png">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sit.</p>
+        </div>
+    </div>
+    
+
+    <!--css flex end-->
+
+    <!--gallery section grid-->
+    <div class="main-div container-fluid">
+        <div class="img1 section1"><img class="grid-image" src="./card/1.jpg"></div>
+        <div class="img1 section2"><img class="grid-image" src="./card/2.jpg"></div>
+        <div class="img1 section3"><img class="grid-image" src="./card/3.jpg"></div>
+        <div class="img1 section4"><img class="grid-image" src="./card/4.jpg"></div>
+        <div class="img1 section5"><img class="grid-image" src="./card/5.jpg"></div>
+        <div class="img1 section6"><img class="grid-image" src="./card/6.jpg"></div>
+        <div class="img1 section7"><img class="grid-image" src="./card/7.jpg"></div>
+        <div class="img1 section8"><img class="grid-image" src="./card/8.jpg"></div>
+        <div class="img1 section9"><img class="grid-image" src="./card/9.jpg"></div>
+    </div>
+
+    <!--gallery section grid end-->
+
+
+
+
+
+    <!--card starrt-->
+
+    <div id="cards2" class="jumbotron jumbotron-fluid" id="cc">
+        <br>
+        <br><br>
+        <div class="mx-auto" style="width:1210px">
+
+
+            <div class="row justify-content-around">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./card/card1.png" class="card-img-top" alt="python">
+                        <div class="card-body">
+                            <h5 class="card-title">Complete Python Bootcamp</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Call to Action</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./card/card2.png" class="card-img-top" alt="html/bootstarp">
+                        <div class="card-body">
+                            <h5 class="card-title">Build Respionsive Websites: Frontend 101</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Call to Action</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./card/card3.png" class="card-img-top" alt="Docker">
+                        <div class="card-body">
+                            <h5 class="card-title">Docker Mastery : The Complete Toolset</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Call to Action</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+        <!--card end-->
+
+
+
+
+
+        <!--footer starrt-->
+
+        <footer id="foo" class="page-footer font-small blue pt-4">
+
+            <div class="container-fluid">
+                <br>
+
+                <div class="row text-left" style="margin-left:8%;">
+
+                    <div class="col-md-4">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Useful Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" class="list-link">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="list-link">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="list-link">Our Vision</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="list-link">Feedback</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-4 ">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">More Links</h5>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#!" class="list-link">Song.com</a></li>
+                            <li><a href="#!" class="list-link">WWEIndia.com</a></li>
+                            <li><a href="#!" class="list-link">GrammarAcademy</a></li>
+                            <li><a href="#!" class="list-link">JEE</a></li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <!-- Content -->
+                        <h5 class="text-uppercase">Contact Us</h5>
+                        <p>Email : contactus@acciojob.com <br> Phone : +91 8595563221 <br> Add : 4th floor,
+                            91SpringBoard, Sector 44, Gurugram, Haryana 122003 </p>
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </footer>
+        <br>
+        <!-- Copyright -->
+
+
+
+
+        <div class="mx-auto" style="width:1210px">
+
+
+            <div class="row justify-content-between">
+
+                <div class="col-md-6">
+                    <div class="footer-copyright text-left py-3 foot">© 2023 Complex UI. All Rigths Reserved.
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <a href="#top" class="btn btn-primary">Back to Top</a>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+
+
+</body>
+
+</html>
